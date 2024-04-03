@@ -24,6 +24,8 @@ jobs:
         run: npm install
       - name: "Install playwright for ui tests"
         run: npx playwright install
+      - name: "Starting the app as background process"
+        run: npm run start
       - name: "Start unit test"
         run: npm run test:unit
       - name: "Start UI tests"
