@@ -30,8 +30,8 @@ jobs:
         run: echo "panastasovsoftuni"
 
   ui-tests:
-    needs: build-and-deploy
     runs-on: ubuntu:latest
+    needs: build-and-deploy
 
     steps:
       - uses: actions/checkout@v3
